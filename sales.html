@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Main Css File -->
+        <link rel="stylesheet" href="./css/sales.css">
+        <!-- Font Awesome Library -->
+       <link rel="stylesheet" href="./css/all.min.css">
+       <!-- Render All Element Normalize -->
+       <link rel="stylesheet" href="./css/normalize.css">
+       <link rel="icon" href="./image/letter-a.png">
+    <title>Slales</title>
+</head>
+<body>
+    <!-- <div id="time"></div> -->
+    <div class="logo">
+        <div class="div1">
+          <a href="system.html"><i class="fab fa-pied-piper"></i></a> 
+            <p>2021</p>
+          
+            <p>عام 1442 هجري  سنة</p>
+            <p> فاتورة بيع </p> 
+        </div>
+        <div class="div2">
+           <a href="system.html"><i class="fas fa-times"></i> </a> 
+        </div>
+ 
+    </div>
+    <header>
+        <button class="serch">
+            أدوات
+        </button>
+        <div class="nav">
+            <!-- تراجع وحفظ -->
+            <div class="col1">
+                <button > <i class="fas fa-times-circle"></i>  F5 تراجع</button>
+                <button  > 
+                    <i class="fas fa-trash-alt"></i>F5 حذف  </button>
+                <button >
+                    <i class="fas fa-save"></i>F6 حفظ</button>
+                <button class="edit ">
+                    <i class="fas fa-edit"></i>F7 تعديل </button>
+                <button >
+                    <i class="fas fa-file-invoice"></i>F8ف جديدة</button>
+                <button>تصحيح المسار</button>
+                <button >
+                    <i class="fas fa-hand-point-down"></i>السجل الاخير</button>
+                    <button ><i class="fas fa-arrow-up"></i>السجل السابق</button>
+                <button ><i class="fas fa-arrow-down"></i>السجل التالي</button>
+                <button >
+                    <i class="fas fa-hand-point-up"></i>
+                    السجل الاول</button>
+                </div>
+                <!-- تحديث وإغلاق -->
+                <div class="col2">
+                <button><i class="fas fa-retweet"></i> ctrl R تحديث </button>
+               <a href="system.html"><button><i class="fas fa-sign-out-alt"></i> إغلاق </button></a> 
+               </div>
+               <!-- ادراج فاتورة قادمة -->
+                 <div class="col3">
+                <button>إدراج فاتورة قادمة </button>
+                <button>تحميل المصرفات </button>
+                </div>
+                <!-- معلومات الكاشير -->
+                  <div class="box4 close">
+                <p>عبدالجليل بن عمران </p>
+                <p class="date">2021-10-21 PM 09:48</p>
+                  </div>
+                  <!-- الدهاب الى الفاتورة -->
+                 <div class="col4">
+              
+                <button><i class="fas fa-paste"></i> الدهاب إلى فاتورة</button>
+                  </div>
+        </div>
+        <div class="nav-after">
+            <div class="one">
+                <button>ت إجمالي</button>
+                <button> طباعة <i class="fas fa-print"></i></button>
+            </div>
+            <div class="two">
+                <p>أسعار الفاتورة <br>تؤتر في:</p>
+            </div>
+            <div class="three">
+                <button>من الاكسل</button>
+           </div>
+           <div class="four">
+               <button>تصدير SQL</button>
+               <button>إدراج SQL</button>
+           </div>
+           <div class="five">
+               <div class="five5">
+                <select name="dd" id="">
+                    <option value="1">رقم الفاتورة</option>
+                    <option value="2">ملاحظات</option>
+                    <option value="3">الرقم الدفتري</option>
+                    <option value="4"> رقم الصنف</option>
+                    <option value="5"> الوصف</option>
+                    <option value="6"> رقم الكود</option>
+                </select>
+                <button>ابحت</button>
+               </div>
+         
+
+               <input type="text">
+           </div>
+           <div class="sex">
+               <button>عرض</button>
+           </div>
+           <div class="seven">
+               <label for="d">من</label>
+               <input type="date" >
+               <label for="d">الى</label>
+               <input type="date" >
+           </div>
+           <div class="e8">
+               <button>تحديد فاتورة(وضع علامة)</button>
+               <button>حذف كل الاصناف</button>
+           </div>
+        </div>
+        <button class="serch serch2">
+            بحت
+            
+        </button>
+    </header>
+    <nav>
+          <div class="form">
+        
+               <!-- قفل وفتح الفاتورة -->
+                <div class="ctrl">
+                    <div class="ctrl-1">
+                        <input  type="checkbox" >
+                        <p>فتح الفاتورة\قفل </p>
+                    </div>
+                    <div class="ctrl-2" id="card-one">
+                        
+                        <a href="card-item.html" ><i class="far fa-address-card"></i> بطاقة عميل </a>
+                    </div>
+                    <div class="ctrl-3">
+                
+                        <div class="ctrl-4">
+                            <label for="ss">آجل</label>
+                            <input type="radio" name="we" id="ss">
+                            <label for="aa" >نقدية</label>
+                            <input type="radio" name="we" id="aa" checked>
+                        </div>
+                        <div class="cl4">
+                            <p>نوع <br>
+                            الفاتورة</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="">
+                    <!-- Start Form For right Sales Invoice  التاريخ صرف الى -->
+                    <div class="ser">
+                        <div class="ser-1">
+                            <label for="">التاريخ</label>
+                            <input type="date"  value=""><button>!</button>
+                            <p style="margin-left: 15px;"> 0910690036</p>
+                            <label for=""> فاتورة بيع رقم</label>
+                            <input type="number"value="1" name="num-inv">
+                        </div>
+                       <div class="ser-2">
+                           <label for="name-1" id="">صرف إلى</label>
+                           <input list="client" name="client2" id="client3">
+                           <datalist id="client">
+                             <option value="عبدالجليل">
+                             <option value="مفتاح ">
+                             <option value="سليم ">
+                             <option value="عمران ">
+                             <option value="علي">
+                           </datalist>
+                           <input type="submit">
+                           <input type="number" value="00.000" style="background: #ffff80;">
+                           <input type="checkbox">
+                       </div>
+                       <div class="ser-3">
+                            <label for="">ملاحظات </label>
+                            <input type="text" value="هذه الفاتورة نسخة من نظام دلفي للتجارة">
+                      </div>
+                
+                      
+                    </div>
+                  <!-- Start Form Left Sales Invoice فاتورة بيع الفاتورة الدفترية -->
+                    <div class="sec">
+                        <label for="" class="lbl">فاتورة بيع </label>
+                        <div class="sec-1">
+                            <label>الفاتورة الدفترية</label>
+                            <input type="number">
+                            <select name="par" id="">
+                                <option value="1">قطاعي</option>
+                                <option value="2">جملة 1</option>
+                                <option value="3">جملة 2</option>
+                            </select>
+                        </div>
+                        <div class="sec-2">
+                            <label >أخرى</label>
+                            <select name="" id="">
+                                <option value="num"></option>
+                            </select>
+                        </div>
+                      
+                    </div>
+                    <!-- End Form Left Sales Invoice -->
+                   
+                </form>
+              
+                            
+           
+      </div>
+      <!-- تفاصيل الفاتورة يمين  -->
+      <div class="info-invoice">
+        <table>
+            <tr>
+                <th>الفاتورة</th>
+               <th>التاريخ</th>
+                <th> إسم العميل</th>
+                <th>ملاحظات</th>
+                <th>الصافي</th>
+              
+            </tr>
+            <tr>
+              <td><input type="number" value="1" name="num-inv" ></td>
+              <td> <input type="date" ></td>
+              <td><input type="text" value="" class="selected" ></td>
+              <td><input type="text" ></td>
+              <td><input type="number" value="" ></td>
+             </tr>
+        </table>
+      </div>
+      <!-- التوقيت -->
+      <div class="info-time">
+          <p>2021/10/31 11:04 PM </p>
+      </div>
+       <section>
+          <!-- الاصناف -->
+          <div class="nav-sec">
+              <div class="nav-sec-1">
+                 <p>الاصناف</p>
+                <button><i class="fas fa-dolly-flatbed"></i> بطاقة صنف</button>
+                <button><i class="fas fa-sms"></i> sms</button>
+                <button><i style="color: rgba(0, 128, 0, 0.748);" class="fab fa-whatsapp-square"></i> What's Up</button>
+                <input type="checkbox" checked>
+                <label for="">ارفاق فاتورة</label>
+            
+              </div>
+              <div class="nav-sec-2">
+                <button  >تاريخ الصلاحية</button>
+                <i class="far fa-copy "></i>
+                <i class="fas fa-step-backward close" ></i>
+                <i class="fas fa-caret-left close"></i>
+                <i class="fas fa-caret-right close"></i>
+                <i class="fas fa-step-forward close"></i>
+                <i class="fas fa-plus "></i>
+                <i class="fas fa-window-minimize close"></i>
+                <i class="fas fa-sort-up "></i>
+                <i class="fas fa-check close"></i>
+                <i class="fas fa-times close"></i>
+                <i class="fas fa-share "></i>
+              </div>
+              <div class="nav-btn">
+                <button class="btn-1">1</button>
+                <button class="btn-2">2</button>
+              </div>
+           
+              
+          </div>
+          <!-- الفارئ -->
+          <div class="nav-1">
+            <div class="one">
+              <input type="number">
+              <button src="#">...</button>
+            </div>
+            <div class="two">
+                <label for="">القارئ</label>
+                <input type="text">
+                
+            </div>
+            <div class="three">
+                <a href="#">البدائل</a>
+                <input type="checkbox" id="as">
+                <label for="as">إظهار حركات الصنف السابقة</label>
+            </div>
+          </div>
+          <!-- أدواة -->
+          <div class="nav-2">
+              <div class="nav-num-1" >
+                <div class="row1">
+                    <label for="num-item">رقم الصنف</label>
+                    <input type="radio" name="tr" id="num-item">
+                    <input type="number">
+                    <input type="checkbox" >
+                    <input type="text" id="color">
+                    <button src="#">...</button>
+                    <input type="checkbox">
+                    <label for="">الكمية بالصندوق</label>
+                    <input type="number">
+                    <input type="checkbox">
+                </div>
+                <div class="row2">
+                    <label for="cod-item">كود الصنف</label>
+                    <input type="radio" checked name="tr" id="cod-item">
+                    <input type="number">
+           
+                    <select name="qroup" id="">
+                        <option value="1">فنار</option>
+                        <option value="2">اسطب</option>
+                        <option value="3">برونتي</option>
+                        <option value="4">كوفنو</option>
+                    </select>
+                <label for="" id="llbl"> الكمية بالقطعة أو بالمتر</label>
+                <input type="number">
+                <input type="checkbox">
+                </div>
+                
+              </div>
+              <div class="nav-num-2" >
+                 <div class="row1">
+                    <label for="">تكلفة الصندوق</label>
+                    <input type="number">
+                    <label for="">العبوة</label>
+                    <input type="number">
+                    <label for="">تكلفة القطعة</label>
+                    <input type="number">
+                    <label for="">سعر البيع</label>
+                    <input type="number">
+                 </div>
+                  <div class="row2">
+                    <button>إدراج</button>
+                    <input type="text"  value="100%">
+                  </div>
+              </div>
+              
+           
+
+          </div>
+         <!-- الفاتورة -->
+          <div class="invoice-1">
+              <table>
+                  <tr>
+                      <th>رقم الصنف</th>
+                     <th>رقم الكود</th>
+                      <th> الوصف</th>
+                      <th> اللون/البديل</th>
+                      <th> ملاحظات</th>
+                      <th> ك بالقطعة</th>
+                      <th>سعر الوحدة</th>
+                      <th>القيمة </th>
+                      <th>سعر البيع </th>
+                      <th>سعر التكلفة </th>
+                      <th> التكلفة </th>
+                  </tr>
+                  <tr>
+                    <td><input type="number" value="" ></td>
+                    <td><input type="number" value=""></td>
+                    <td><input type="text" value=""></td>
+                    <td><input type="text" ></td>
+                    <td><input type="text"></td>
+                    <td><input type="number" value=""></td>
+                    <td><input type="number" value=""></td>
+                    <td><input type="number" value=""></td>
+                    <td><input type="number" value=""></td>
+                    <td><input type="number" value=""></td>
+                    <td><input type="number" value=""></td>
+                 </tr>
+              </table>
+          </div>
+        </nav>
+    </section>
+
+    <footer>
+        <!-- الازرار -->
+         <div class="btn-right">
+            <button><i class="fas fa-file-invoice-dollar"></i>  إداع سريع </button>
+            <button>عرض إصال فاتورة</button>
+            <button><i class="fas fa-donate"></i> بطاقة النقدية</button>
+            <button>فاتورة الموبايل</button>
+            <button> تصحيح سعر التكلفة</button>
+            <button> فاتورة عرض</button>
+            <button>إدراج من العروض</button>
+            <button>إدراج مجموعة معينة </button>
+         
+        </div>
+        <!-- مربع عل يسار -->
+        <div class="box-2">
+            <select name="fds" id="">
+                <option value="1">دينار</option>
+                <option value="2">دولار</option>
+            </select>
+            <div class="box-inn">
+                <label for="pp">خالص</label>
+                <input type="radio"name="aa" id="pp">
+                <label for="qq">غير خالص</label>
+                <input type="radio" name="aa" id="qq">
+                <label for="zz">عدم الطباعة</label>
+                <input type="radio" name="aa" id="zz" checked>
+            </div>
+            <button><i class="fas fa-print"></i> طباعة</button>
+        </div>
+        <!-- مربع الوسط -->
+        <div class="box-1">
+            <div class="info-q">
+                <!-- الرصيد -->
+                <input type="number" value="0"  title="الرصيد">
+                <!-- سعر المنتج-->
+                <input type="number" value="0"  title="سعر المنتج">
+                <!-- جملة 1 -->
+                <input type="number" value="0"  title="جملة 1">
+                <!-- جملة 2 -->
+                <input type="number" value="0"  title="جملة 2">
+            </div>
+           <div class="one-b">
+            <p  class="roro">إجمالي التكلفة</p>
+            <p>إجمالي الفاتورة</p>
+            <p>نسبة الخصم</p>
+            <p>قيمة الخصم</p>
+            <p>قيمة الفاتورة</p>
+           </div>
+          <div class="two-b">
+            <input class="rere" type="number" value="1000">
+            <input type="number" value="">
+            <input type="number" value="">
+            <input type="number" value="">
+            <input type="number" value="">
+          </div>
+          <div class="three-b">
+            <input class="rere" type="number" value="150">
+            <select name="sel" id="">
+                <option value="1">ترتيب الادخال</option>
+                <option value="2">رقم الصنف</option>
+                <option value="3"> الوصف</option>
+                <option value="4">رقم الكود</option>
+            </select>
+            <p>+ قيمة إضافية </p>
+            <input type="number" value="">
+          </div>
+          <div class="four-b">
+         <p>السائق الفني</p>
+            <select name="dse" id="">
+                <option value="1">محمد</option>
+                <option value="2">علي</option>
+            </select>
+            <i class="fas fa-love"></i>
+            <i class="fas fa-love"></i>
+            <p>قيمة</p>
+            <input type="number" value="">
+          </div>
+           
+
+        </div>
+    </footer>
+    
+      <script src="js/sales.js"></script>
+      <script src="./js/system.js"></script>
+</body>
+</html>

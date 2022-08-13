@@ -1,0 +1,816 @@
+/* Start Global Rules */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+:root {
+  --main-color: #f0f0f0;
+  --button: #e1e1e1;
+  --invoice-1: #ffffe1;
+  --info-invoice: #c0c0c0;
+}
+::selection {
+  background: transparent;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+i {
+  color: #2b2b2b;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background: var(--main-color);
+}
+button {
+  cursor: pointer;
+  border: 1px solid #cdcdcd;
+  border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  -moz-border-radius: 2.5px;
+  -ms-border-radius: 2.5px;
+  -o-border-radius: 2.5px;
+  background: var(--button);
+}
+body button:hover {
+  border: 1px solid #4a90e2;
+  background: #4a91e223;
+}
+.close,
+.close i,
+section .nav-sec .nav-sec-2 i.close,
+header .nav .box4.close {
+  color: var(--info-invoice);
+}
+/* End Global Rules */
+.logo {
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: inset;
+  height: 23px;
+  z-index: 3;
+}
+.div1 {
+  display: flex;
+  align-items: center;
+}
+.div2 i {
+  margin-right: 5px;
+}
+.div2 i:hover {
+  color: red;
+}
+.logo p {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 75px;
+  width: 100%;
+  border: 1px solid var(--info-invoice);
+}
+header > button {
+  width: 50px;
+}
+
+header .nav {
+  position: relative;
+  border-style: inset;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 15% 10% 15% 10%;
+  background-color: var(--main-color);
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px 2px;
+  border: 1px solid var(--info-invoice);
+}
+.nav.trans button,
+.nav.trans button i,
+.nav.trans .box4,
+.nav.trans {
+  color: transparent;
+}
+.nav-after {
+  margin-top: -100px;
+  margin-left: 48px;
+  position: absolute;
+  width: 1267px;
+  height: 70px;
+  background: var(--main-color);
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  align-items: center;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  z-index: 1;
+}
+.serch2 {
+  z-index: 5;
+}
+.nav-after.open {
+  margin-top: 1px;
+}
+.nav-after .one,
+.nav-after .three,
+.nav-after .two,
+.nav-after .four,
+.nav-after .five,
+.nav-after .sex,
+.nav-after .seven,
+.nav-after .e8 {
+  display: grid;
+  gap: 5px;
+  align-items: center;
+  direction: rtl;
+  justify-content: space-around;
+}
+.nav-after .two p {
+  color: red;
+  font-size: 17px;
+}
+.nav-after .three button,
+.nav-after .sex button {
+  height: 60px;
+}
+.nav-after .five {
+  grid-template-rows: auto auto;
+}
+.nav-after .five button {
+  height: 20px;
+}
+.nav-after .five input {
+  width: 215px;
+}
+.nav-after .seven {
+  grid-template-columns: auto auto;
+}
+.nav-after button {
+  width: 128px;
+  height: 26px;
+}
+.col1 {
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: repeat(2, 31px);
+  align-items: center;
+  justify-content: space-around;
+}
+.col1 button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--button);
+  width: 120px;
+  height: 28px;
+  font-size: 16px;
+}
+.col1 i,
+.col2 i,
+.col3 i,
+.col4 i {
+  font-size: 16px;
+}
+.col2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+.col2 > button {
+  height: 60px;
+  width: 95px;
+  background-color: var(--button);
+  margin-left: 4px;
+  font-size: 14px;
+}
+.col2 button:last-child {
+  height: 60px;
+  width: 75px;
+  background-color: var(--button);
+  margin-left: 4px;
+  font-size: 16px;
+}
+.col3 {
+  display: grid;
+  grid-template-rows: repeat(2, 31px);
+  align-items: center;
+}
+.col3 button {
+  color: #008080;
+  font-weight: 540;
+  background: var(--button);
+  width: 110px;
+  height: 28px;
+  font-size: 16px;
+}
+.col3 button:nth-child(2) {
+  color: red;
+}
+.col4 button {
+  background: var(--button);
+  width: 100px;
+  height: 60px;
+  font-size: 16px;
+  display: grid;
+  align-items: center;
+}
+.box4 {
+  width: 170px;
+  height: 60px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--info-invoice);
+  visibility: visible;
+}
+.box4.close {
+  visibility: hidden;
+}
+.box4 p {
+  color: #008080;
+  font-weight: bold;
+  font-size: 16px;
+}
+.serch {
+  background-color: #ffffff;
+  font-size: 16px;
+}
+nav {
+  display: grid;
+  grid-template-areas:
+    " form form form  info  info "
+    "sec  sec  sec  info   info";
+}
+nav .form {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 17.5% 77.5%;
+  grid-area: form;
+  width: 1100px;
+  justify-content: space-between;
+  border: 1px solid var(--info-invoice);
+}
+nav form {
+  direction: rtl;
+  display: grid;
+  grid-template-columns: 63% 20%;
+  gap: 10px;
+  border-style: inset;
+}
+/* Start Form Right Sales Invoice */
+.ser {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+}
+.ser .ser-1 {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.ser .ser-1 input[type="date"] {
+  width: 130px;
+  height: 23px;
+}
+.ser .ser-1 input[type="number"] {
+  width: 60px;
+  height: 23px;
+}
+.ser-1 button {
+  width: 20px;
+  height: 23px;
+}
+.ser-2 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.ser-2 input[type="number"] {
+  width: 100px;
+  height: 23px;
+}
+.ser-2 select {
+  width: 180px;
+  height: 23px;
+}
+.ser-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.ser-3 input {
+  width: 400px;
+}
+/* End Form Right Sales Invoice */
+/* Start Form Left Sales Invoice */
+.sec {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 3px 15px;
+}
+.sec .lbl {
+  font-weight: bold;
+  font-size: 18px;
+}
+.sec .sec-1 {
+  display: grid;
+  grid-template-columns: 60px auto auto;
+  align-items: center;
+}
+.sec-1 input {
+  width: 100px;
+  height: 23px;
+  margin-left: 5px;
+}
+.sec-2 {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+}
+.sec-2 input {
+  width: 205px;
+  height: 23px;
+}
+/* End Form Left Sales Invoice */
+/* ********************************************************** */
+/* Start  Control Section  */
+.ctrl {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  height: 100px;
+  border: 1px solid var(--invoice-1);
+}
+.ctrl .ctrl-1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+.ctrl .ctrl-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+}
+.ctrl .ctrl-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.ctrl-4 {
+  display: grid;
+  grid-template-columns: 71px 19px;
+  border-style: outset;
+  width: 108px;
+  height: 61px;
+}
+.cl4 p {
+  color: blue;
+  font-size: 20px;
+}
+/* End  Control Section  */
+/* right page */
+nav .info-invoice {
+  background-color: var(--info-invoice);
+  height: 70vh;
+  width: 260px;
+  grid-area: info;
+  overflow: scroll;
+  direction: rtl;
+  border: solid 1px var(--button);
+}
+nav .info-invoice input[type="number"] {
+  width: 60px;
+}
+nav .info-invoice input[type="text"] {
+  width: 70px;
+}
+nav .info-invoice input:focus {
+  width: 120px;
+}
+nav .info-invoice input[type="date"] {
+  width: 123px;
+}
+.info-time {
+  background: var(--main-color);
+  width: 210px;
+  height: 90px;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.info-time p {
+  border: outset;
+  width: 160px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Start Section invoice */
+section {
+  grid-area: sec;
+  height: 300px;
+  width: 1075px;
+  margin-left: 30px;
+  margin-top: -30px;
+  direction: rtl;
+  display: grid;
+  grid-template-rows: 10% 10% 80%;
+  background: var(--main-color);
+  border: 1px solid var(--info-invoice);
+}
+section .nav-sec {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin-top: 3px;
+}
+section .nav-sec .nav-sec-1 {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 5px;
+  align-items: center;
+  height: 31px;
+}
+section .nav-sec .nav-sec-1 button {
+  width: 130px;
+  height: 30px;
+}
+section .nav-sec .nav-sec-2 {
+  direction: ltr;
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 25px) 1fr;
+  margin-left: 5px;
+  justify-content: space-between;
+}
+section .nav-sec .nav-sec-2 i {
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  margin: 5px;
+}
+section .nav-sec .nav-sec-2 button {
+  height: 28px;
+  background-color: var(--button);
+}
+section .nav-btn {
+  position: absolute;
+  left: 0;
+  display: grid;
+  margin-top: 107px;
+}
+section .nav-btn button {
+  width: 30px;
+  height: 40px;
+  border: 1px solid var(--info-invoice);
+}
+.nav-1 {
+  /* margin-top: 10px; btn-2*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1px var(--info-invoice);
+}
+.nav-1.hidden {
+  display: none;
+}
+.nav-1 .one input {
+  width: 100px;
+}
+.nav-1 .two input {
+  width: 150px;
+  background: #ddeeff;
+}
+.invoice-1 {
+  direction: rtl;
+  max-width: 1100px;
+  overflow: scroll;
+  border-style: solid;
+  border-color: var(--info-invoice);
+  background: var(--invoice-1);
+}
+.invoice-1.btn2 {
+  margin-top: 30px;
+  height: 235px;
+}
+/* Page two */
+tr th {
+  border: inset;
+}
+td input[type="number"] {
+  outline: 1px solid #caffca;
+  width: 95px;
+}
+th {
+  background: var(--main-color);
+}
+td {
+  background: var(--invoice-1);
+  outline: 1px solid #abadb3;
+  border-collapse: collapse;
+}
+td input {
+  border: transparent;
+}
+.invoice-1 tr td:nth-child(4) input {
+  width: 120px;
+}
+.invoice-1 tr td:nth-child(6) input,
+td:nth-child(1) input {
+  background: #caffca;
+}
+.invoice-1 tr td:nth-child(9) input {
+  background: #80ff80;
+}
+.invoice-1 tr td:nth-child(10) input,
+.invoice-1 tr td:nth-child(11) input {
+  background: #ff8080;
+}
+/************************************Hidden*****************************************/
+.nav-2 {
+  grid-template-columns: auto auto;
+  height: 100px;
+  display: none;
+}
+.nav-2.active {
+  display: grid;
+}
+/* page two */
+.nav-num-1 {
+  margin-top: 10px;
+}
+.nav-2 .nav-num-1 .row1 {
+  display: grid;
+  grid-template-columns: 52px 10px 80px 10px 130px 16px 0 auto 50px auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+.nav-2 .nav-num-1 .row2 {
+  display: grid;
+  grid-template-columns: 52px 20px 50px 200px 120px 48px auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+.nav-2 .nav-num-1 .row1 #color {
+  background: var(--button);
+}
+.nav-2 .nav-num-1 .row2 select {
+  width: 150px;
+}
+.nav-num-1 input[type="number"],
+.nav-num-2 input[type="number"] {
+  width: 60px;
+  height: 22px;
+}
+.nav-2 .nav-num-1 input[type="text"],
+.nav-num-2 input[type="text"] {
+  width: 150px;
+  height: 23px;
+}
+.nav-num-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-right: 5px;
+}
+.nav-num-2 .row1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 25px 20px;
+  margin-top: 10px;
+}
+.nav-num-2 .row2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  height: 60px;
+  margin: 0 2px 0 2px;
+}
+.nav-num-2 .row2 button {
+  width: 40px;
+  height: 50px;
+  margin-top: 10px;
+}
+.nav-num-2 .row2 input {
+  margin-top: 10px;
+  border: none;
+  width: 40px;
+}
+.nav-num-2 .row1 input:last-child {
+  background: #80ff80;
+}
+/**********************************************************/
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 65% auto;
+  width: 1100px;
+  background: var(--main-color);
+  margin-top: -30px;
+  height: 100px;
+  border: solid 1px var(--info-invoice);
+}
+footer .btn-right {
+  display: grid;
+  position: absolute;
+  right: 3px;
+  grid-template-columns: auto auto;
+  gap: 4px;
+  margin-top: 10px;
+}
+footer .btn-right button {
+  background: var(--button);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  height: 23px;
+  width: 100px;
+  border: 1px solid #4f4f4f;
+}
+footer .btn-right button:nth-child(4) {
+  color: red;
+}
+footer .btn-right button:first-child i {
+  color: rgb(8, 121, 8);
+}
+footer .btn-right button:nth-child(3) i {
+  color: rgb(143, 143, 10);
+  font-size: 16px;
+}
+footer .btn-right button:hover,
+.btn-2.active,
+.btn-1.active {
+  border: 1px solid #4a90e2;
+  background: #4a91e223;
+  border-bottom: 2px solid #797979;
+}
+footer .box-1 {
+  direction: rtl;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  align-items: center;
+}
+footer .box-1 .info-q {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 350px;
+  margin: auto;
+}
+footer .box-1 .info-q input {
+  border: 1px solid transparent;
+  background: transparent;
+}
+footer .box-1 .one-b,
+.two-b {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+footer .box-1 .four-b {
+  display: grid;
+  grid-template-columns: 20% 20% 10% 10% 20% 20%;
+}
+footer .box-1 .three-b {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+}
+footer .box-1 input,
+.box-1 select,
+footer .ffee input {
+  width: 90px;
+  height: 23px;
+}
+
+/********************* اجمالي التكلفة **********************************/
+.one-b p:first-child {
+  color: red;
+  font-size: 16px;
+  cursor: context-menu;
+}
+.roro:hover {
+  background-color: red;
+}
+.two-b input:first-child,
+.three-b input:first-child {
+  color: var(--main-color);
+  border: none;
+}
+.two-b input:first-child:hover {
+  color: red;
+  border: 1px solid var(--info-invoice);
+  text-align: center;
+}
+
+.three-b input:first-child:hover {
+  color: black;
+  text-align: left;
+}
+.three-b {
+  position: relative;
+}
+.three-b::after {
+  content: "0";
+  width: 60px;
+  height: 20px;
+  z-index: 1;
+  position: absolute;
+  right: 96px;
+  color: red;
+}
+
+/********اجمالي الفاتورة*****************قيمة الفاتورة**************/
+.two-b input:nth-child(2),
+input:nth-child(5) {
+  background: var(--info-invoice);
+}
+.one-b p:nth-child(2),
+.one-b p:nth-child(5) {
+  color: blue;
+  font-size: 16px;
+}
+.two-b input:nth-child(2),
+.two-b input:nth-child(5) {
+  color: blue;
+}
+/***************نسبة الخصم قيمة الخصم***/
+.one-b p:nth-child(3),
+.one-b p:nth-child(4),
+.two-b input:nth-child(3),
+.two-b input:nth-child(4) {
+  color: #004080;
+}
+/********ترتيب الادخال*****************************/
+.three-b select {
+  background: var(--button);
+}
+.three-b input:last-child {
+  background: var(--info-invoice);
+}
+.three-b input:last-child {
+  color: blue;
+}
+
+footer .box-2 {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 15px 10px 0;
+}
+footer .box-2 select {
+  width: 90px;
+  height: 23px;
+  background: var(--button);
+}
+footer .box-2 button {
+  width: 90px;
+  height: 30px;
+  background: var(--button);
+}
+.box-inn {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+nav .form.ctrl .ctrl-2 {
+  display: none;
+}
+/* #time{
+  display:inline;
+  font-size: 10em;
+  font-family: sans-serif;
+  color: silver;
+} */

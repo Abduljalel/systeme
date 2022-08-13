@@ -1,0 +1,137 @@
+/* Start Global Rules */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+ }
+body {
+  font-family: 'Almarai', sans-serif;
+}
+i {
+  color: #4a90e2;
+}
+/* End Global Rules */
+.logo {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: inset;
+  height: 25px;
+}
+.div1 {
+  display: flex;
+  align-items: center;
+}
+.div2 i{
+  margin-right: 5px;
+  }
+  .div2 i:hover {
+    color: red;
+  }
+.logo img {
+  cursor: pointer;
+  margin-top: 4px;
+}
+.logo p {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.main {
+ position: relative;
+  height: 70vh;
+  z-index: -1;
+
+}
+.text {
+  position: absolute;
+  margin:0 80px;
+}
+
+.text .b {
+ color: red;
+ position: absolute;
+ margin-top: 30px;
+  font-weight: 900;
+  font-size: 20px;
+  width: 300px;
+  font-family: 'Tajawal', sans-serif;
+}
+.text  .as{
+  font-size: 86px;
+  color:#ffff00;
+  margin: 70px 0 30px 50px;
+  font-family: 'Tajawal', sans-serif;
+}
+.pp {
+ position: absolute;
+ color: red;
+ font-size: 36px;
+ font-weight: 500;
+margin: 200px auto auto 40%;
+font-family: 'Tajawal', sans-serif;
+}
+.text p {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffff;
+}
+nav {
+  background-color: #f0f0f0;
+ 
+} 
+nav > ul {
+  margin: 10px 5px;
+
+   margin: 0;
+  padding: 0;
+  
+}
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+aside .container {
+  height: 125px;
+  border: solid 5px #ece2ec;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 5px;
+  padding: 10px 10px 10px;
+  direction: rtl;
+  background-color: #0000a0;
+}
+aside .container .ser {
+  border: blue 1px solid;
+  text-align: center;
+  background-color: #e1e1e1;
+  cursor: pointer;
+  margin-top: -5px;
+}
+.ser p {
+  font-weight: bold;
+}
+aside .container .ser img {
+  margin-top: 26px;
+}
+.list {
+  display: grid;
+  width: 150px;
+  position: absolute;
+  right: 400px;
+  background-color: #F0F0F0;
+  display: none;
+}
+nav >ul:hover .list{
+  display: block;
+}

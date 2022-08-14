@@ -140,7 +140,7 @@ and (max-width: 900px)
    display: grid;
    justify-content: center;
    align-items: center;
-   height: 40px;
+   height: 35px;
    font-size: 36px;
    width: 400px;
  }.logo p {
@@ -167,20 +167,20 @@ aside .container {
 }
 aside .container .ser {
   margin-top: 10px;
-  width: 150px;
-  height: 108px;
+  width: 120px;
+  height: 90px;
   font-size: 28px;
 }
 .ser img {
   height: 47px;
-  width: 130px;
+  width: 110px;
 }
 }
 header , aside, .main {
-  width: 410px;
+  width: 400px;
 }
 #main-im {
-   height: 700px;
+   height: 600px;
 }
 
 }

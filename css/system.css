@@ -148,7 +148,7 @@ and (max-width: 900px)
  }
  .logo .div2 {
   position: relative;
-  left: 166px;
+  left: 106px;
  }
  .div1 {
    position: absolute;
@@ -167,13 +167,13 @@ aside .container {
 }
 aside .container .ser {
   margin-top: 10px;
-  width: 206px;
-  height: 138px;
+  width: 150px;
+  height: 108px;
   font-size: 28px;
 }
 .ser img {
-  height: 67px;
-  width: 150px;
+  height: 47px;
+  width: 130px;
 }
 }
 header , aside, .main {

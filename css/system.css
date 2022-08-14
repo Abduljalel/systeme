@@ -8,11 +8,13 @@
   text-decoration: none;
   color: black;
  }
+
 body {
   font-family: 'Almarai', sans-serif;
 }
 i {
   color: #4a90e2;
+
 }
 /* End Global Rules */
 .logo {
@@ -23,6 +25,7 @@ i {
   border-bottom: inset;
   height: 25px;
 }
+
 .div1 {
   display: flex;
   align-items: center;
@@ -88,8 +91,7 @@ nav {
 } 
 nav > ul {
   margin: 10px 5px;
-
-   margin: 0;
+  margin: 0;
   padding: 0;
   
 }
@@ -124,14 +126,61 @@ aside .container .ser {
 aside .container .ser img {
   margin-top: 26px;
 }
-.list {
-  display: grid;
-  width: 150px;
-  position: absolute;
-  right: 400px;
-  background-color: #F0F0F0;
+
+@media only screen 
+and (min-width: 200px) 
+and (max-width: 900px) 
+ { 
+
+.text {
   display: none;
 }
-nav >ul:hover .list{
-  display: block;
+
+ .logo  {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   font-size: 36px;
+   width: 445px;
+ }.logo p {
+   font-size: 20px;
+ }
+ .logo .div2 {
+  position: relative;
+  left: 196px;
+ }
+ .div1 {
+   position: absolute;
+   left: 10px;
+ }
+ nav ul li {
+  display: none;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+aside .container {
+  grid-template-columns: repeat(2,1fr);
+}
+aside .container .ser {
+  margin-top: 10px;
+  width: 206px;
+  height: 138px;
+  font-size: 28px;
+}
+.ser img {
+  height: 67px;
+  width: 150px;
+}
+}
+header , aside, .main {
+  width: 440px;
+}
+#main-im {
+   height: 800px;
+}
+
 }

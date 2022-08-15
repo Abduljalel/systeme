@@ -166,7 +166,7 @@ nav ul li a {
 aside .container {
   grid-template-columns: repeat(2,1fr);
   gap: 21px 10px;
-  height: 500px;
+  height: 200px;
   margin-top: 8px;
 }
 aside .container .ser {

@@ -165,16 +165,14 @@ nav ul li a {
 }
 aside .container {
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,1fr);
-  overflow: hidden;
-  gap: 1px 15px;
-  height: 640px;
+  gap: 1px 20px;
+  height: 637px;
   margin-top: 8px;
 }
 aside .container .ser {
-  margin-top: 6px;
+  margin-top: 4px;
   width: 165px;
-  height: 95px;
+  height: 92px;
   font-size: 18px;
 }
 .ser img {

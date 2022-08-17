@@ -168,13 +168,13 @@ aside .container {
   grid-template-rows: repeat(3,1fr);
   overflow: hidden;
   gap: 1px 15px;
-  height: 719px;
+  height: 640px;
   margin-top: 8px;
 }
 aside .container .ser {
-  margin-top: 16px;
-  width: 170px;
-  height: 98px;
+  margin-top: 6px;
+  width: 165px;
+  height: 95px;
   font-size: 18px;
 }
 .ser img {

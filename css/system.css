@@ -186,7 +186,7 @@ main {
   width: 91px;
 }
 
-header , aside, .main {
+header , aside {
   display: grid;
   justify-content: center;
 }

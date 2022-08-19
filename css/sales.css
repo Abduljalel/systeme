@@ -129,7 +129,7 @@ header .nav {
   z-index: 5;
 }
 .nav-after.open {
-  margin-top: 1px;
+  margin: 2px 42px;
 }
 .nav-after .one,
 .nav-after .three,
@@ -191,24 +191,21 @@ header .nav {
 .col4 i {
   font-size: 16px;
 }
-.col2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-}
 .col2 > button {
-  height: 60px;
-  width: 95px;
-  background-color: var(--button);
-  margin-left: 4px;
-  font-size: 14px;
-}
-.col2 button:last-child {
   height: 60px;
   width: 75px;
   background-color: var(--button);
   margin-left: 4px;
-  font-size: 16px;
+  font-size: 14px;
+}
+.col2 button#upr {
+  margin-top: 5px;
+  position: absolute;
+}
+.col2 button:last-child {
+  height: 60px;
+  width: 95px;
+  margin: 5px 90px;
 }
 .col3 {
   display: grid;
@@ -242,9 +239,6 @@ header .nav {
   text-align: center;
   border: 1px solid var(--info-invoice);
   visibility: visible;
-}
-.box4.close {
-  visibility: hidden;
 }
 .box4 p {
   color: #008080;
@@ -808,9 +802,78 @@ footer .box-2 button {
 nav .form.ctrl .ctrl-2 {
   display: none;
 }
-/* #time{
-  display:inline;
-  font-size: 10em;
-  font-family: sans-serif;
-  color: silver;
-} */
+
+  @media only screen 
+and (min-width: 200px) 
+and (max-width: 900px) 
+ {
+   .logo  {
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     height: 35px;
+     font-size: 36px;
+     width: 400px;
+   }.logo p {
+     font-size: 20px;
+   }
+   .logo i {
+     font-size: 36px;
+     color: rgba(0, 255, 255, 0.555);
+   }
+   .logo .div2 {
+    position: relative;
+    left: 179px;
+   }
+   .div1 {
+     position: absolute;
+     left: 10px;
+     width: 386px;
+   }
+   header {
+    height: 150px;
+  }
+  header .nav {
+    grid-template-columns: 1fr  1fr 1fr;
+    overflow: scroll;
+   }
+   .nav-after{overflow: scroll;background-color: red;}
+  
+    .col1 {
+      grid-template-columns: repeat(2, 120px);
+   }
+   .col2 > button {
+    width: 30px;
+    height: 146px;
+    background-color: var(--button);
+    margin-left: 4px;
+    font-size: 14px;
+  }
+  .col2 button#upr {
+    margin: 0 33px;
+  }
+  .col2 button:last-child {
+    height: 146px;
+    width: 30px;
+    margin: 0 1px;
+  }
+   .nav-after,nav,footer {
+    display: none;
+  }
+
+  .col4,.box4.close,.col3 {
+     display: none;
+   }
+ }
+ @media only screen 
+and (min-width: 900px) 
+and (max-width: 1200px) 
+ {
+  
+ }
+ @media only screen 
+and (min-width: 1200px) 
+and (max-width: 2000px) 
+ {
+  
+ }

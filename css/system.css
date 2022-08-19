@@ -14,9 +14,7 @@ body {
 }
 i {
   color: #4a90e2;
-  color: red;
-
-}
+ }
 /* End Global Rules */
 .logo {
   background: #fff;
@@ -91,28 +89,28 @@ nav {
  
 } 
 nav > ul {
-  margin: 10px 5px;
   margin: 0;
-  padding: 0;
-  
 }
 nav ul li {
   display: inline;
   padding: 10px;
+  position: relative;
+  left: 392px;
+
 }
 nav ul li a {
   text-decoration: none;
   color: black;
 }
 aside .container {
-  height: 216px;
+  height: 105px;
   border: solid 5px #ece2ec;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 5px;
+  gap: 5px;
   padding: 10px 10px 10px;
   direction: rtl;
-  background-color: #0000a0;
+  background-color: #0300a0d8;
 }
 aside .container .ser {
   border: blue 1px solid;
@@ -132,7 +130,9 @@ aside .container .ser img {
 and (min-width: 200px) 
 and (max-width: 900px) 
  { 
-
+nav ul {
+  display: none
+}
 .text {
   display: none;
 }
@@ -152,27 +152,19 @@ and (max-width: 900px)
  }
  .div1 {
    position: absolute;
-   left: 10px;
    width: 386px;
  }
- nav ul li {
-  display: none;
-  padding: 10px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: black;
-}
 aside .container {
   grid-template-columns: repeat(2,1fr);
   gap: 1px 20px;
   height: 637px;
   margin-top: 8px;
+  background-color: #4a90e2;
 }
 aside .container .ser {
   margin-top: 4px;
   width: 165px;
-  height: 92px;
+  height: 100px;
   font-size: 18px;
 }
 .ser img {
